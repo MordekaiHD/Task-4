@@ -15,17 +15,25 @@ int number3 = int.Parse (Console.ReadLine());
 int max = 0;
 
 if(number1 > number2)
+{
     max = number1;
     if(max > number3)
-        Console.WriteLine("Большее из трёх чисел: " + max);
-    else
+    {
+        Console.WriteLine("Максимальное число: " + max);
+    }
+    else 
     {
         max = number3;
-        Console.WriteLine("Большее из трёх чисел: " + max);
-    }    
-
-    
-
-
-            
-   
+        Console.Write("Максимальное число: " + max);
+    }
+}
+else if(number2 > number3)
+{
+    max = number2;
+    Console.Write("Максимальное число: " + max);
+}
+else
+{
+    max = number3;
+    Console.Write("Максимальное число: " + max);
+}                             
